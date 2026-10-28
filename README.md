@@ -4,12 +4,13 @@
 
 ## 代表项目
 
-### [AI 基础设施：训推编排与推理服务](https://github.com/fei232401/ai-infra-portfolio)
+### [训推工作负载弹性编排：elastic-workload-operator](https://github.com/fei232401/elastic-workload-operator)
 
-- **Elastic Workload Operator**：Go / controller-runtime / PyTorch。根据推理 TTFT 调整训练与推理副本，持久化目标并协调 checkpoint、释放和就绪。
-- **Inference Platform**：Python / FastAPI / PostgreSQL / React。实现推理后端选路、请求准入、超时、审计和前缀亲和路由。
+Go / controller-runtime / PyTorch。根据推理 TTFT 调整训练与推理副本，持久化目标并协调 checkpoint、释放和就绪。端到端交接验证基于单节点 Kind、CPU 训练与模拟推理负载，不代表 GPU 或多节点性能。
 
-Operator 交接验证基于单节点 Kind、CPU 训练与模拟推理负载，不代表 GPU 或多节点性能。推理亲和实验基于单卡双 vLLM 实例及限定 KV 容量；详细条件和结果见仓库。
+### [LLM 推理服务平台：inference-platform](https://github.com/fei232401/inference-platform)
+
+Python / FastAPI / PostgreSQL / React。实现后端选路、请求准入、超时、审计和前缀亲和路由。亲和实验基于单卡双 vLLM 实例和限定 KV 容量；详细条件和结果见仓库。
 
 ## 技术栈
 
